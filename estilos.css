@@ -1,0 +1,292 @@
+/* --- VARIABLES ESTILO PRINCESA (CINDERELLA ROMÁNTICO) --- */
+:root {
+    --azul-pastel: #cce0f5;
+    --azul-acero: #68829e;
+    --azul-oscuro-legible: #3a4f66;
+    --blanco-puro: #ffffff;
+    --fuente-romantica: 'Great Vibes', cursive;
+    --fuente-gala: 'Cinzel', serif;
+    --fuente-cuerpo: 'Montserrat', sans-serif;
+}
+.titulo-principal {
+    font-family: 'Cinzel', serif; /* Elegante, pero sigue siendo clara */
+    font-size: 3rem;
+    color: #0b2240; /* Azul oscuro para contraste */
+    text-align: center;
+    margin: 20px 0;
+}
+/* --- ESTILOS ESPECÍFICOS DE LA PORTADA (IMAGE_ECF2B7.PNG) --- */
+.portada {
+    padding: 60px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo-portada {
+    font-family: 'Cinzel', serif; /* Serif clásica */
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 8px; /* Espaciado generoso */
+    color: #1d3557; /* Azul oscuro elegante */
+    margin-bottom: 2px;
+}
+
+.titulo-xv {
+    font-family: 'Cinzel', serif; /* Serif clásica */
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #1d3557;
+    line-height: 1.1;
+}
+
+.divisor-elegante {
+    font-size: 0.8rem;
+    color: #457b9d;
+    margin: 15px 0;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+.nombre-quinceanera {
+    font-family: 'Great Vibes', cursive; /* Letra cursiva fluida */
+    font-size: 4.5rem;
+    color: #1d3557;
+    font-weight: 400;
+    margin-top: -10px; /* Hace que se acerque elegantemente al divisor */
+    margin-bottom: 15px;
+}
+
+.fecha-portada {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: #457b9d;
+    margin-top: 5px;
+}
+
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    background-color: #f0f5fa;
+    color: var(--azul-oscuro-legible);
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* --- SECCIONES --- */
+section, header {
+    padding: 40px 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- TIPOGRAFÍA CENTRAL --- */
+.titulo-seccion, .titulo-confirmar, .azul-rey-texto, .fecha-portada, .hora-evento, .detalles-evento h3 {
+    font-family: var(--fuente-gala);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--azul-acero);
+}
+
+/* --- TARJETAS --- */
+.tarjeta, .tarjeta-gala, .tarjeta-evento {
+    background: var(--blanco-puro);
+    border-radius: 30px;
+    border: 1px solid rgba(104, 130, 158, 0.2);
+    box-shadow: 0 12px 35px rgba(104, 130, 158, 0.1);
+}
+
+.tarjeta-gala {
+    padding: 40px 25px;
+    background: linear-gradient(to bottom, #ffffff, #f7faff);
+}
+
+.tarjeta-evento {
+    margin-bottom: 30px;
+    padding: 35px 25px;
+}
+
+/* --- BOTONES --- */
+.btn-gps, .btn-confirmar {
+    display: inline-block;
+    padding: 12px 28px;
+    font-family: var(--fuente-gala);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-gps {
+    background: transparent;
+    color: var(--azul-acero);
+    border: 1px solid var(--azul-acero);
+    margin-top: 25px;
+}
+
+.btn-gps:hover {
+    background: var(--azul-acero);
+    color: var(--blanco-puro);
+}
+
+.btn-confirmar {
+    background: var(--blanco-puro);
+    color: var(--azul-acero);
+    border: 1px solid var(--blanco-puro);
+    box-shadow: 0 8px 25px rgba(58, 79, 102, 0.2);
+    margin-top: 15px;
+}
+
+.btn-confirmar:hover {
+    background: var(--azul-pastel);
+    color: var(--azul-oscuro-legible);
+}
+
+/* --- PORTADA --- */
+.portada {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-pastel);
+    border-radius: 35px;
+    margin: 20px auto;
+    width: calc(100% - 32px);
+    max-width: 420px;
+    padding: 40px 24px;
+    box-shadow: 0 15px 40px rgba(104, 130, 158, 0.25);
+    background-image: radial-gradient(circle, #ffffff 68%, var(--azul-pastel) 69%);
+}
+
+/* --- TIPOGRAFÍA ROMÁNTICA --- */
+.oro-brillante {
+    font-family: var(--fuente-romantica);
+    color: var(--azul-acero);
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin: 20px 0;
+    font-weight: 400;
+    text-transform: none;
+}
+
+/* --- CUENTA REGRESIVA --- */
+.seccion-regresiva {
+    padding: 30px 20px;
+}
+
+.tarjeta-regresiva {
+    background: linear-gradient(to bottom, #ffffff, #f9fbff);
+    border-radius: 25px;
+    padding: 25px 15px;
+    border: 2px solid var(--azul-pastel);
+    box-shadow: 0 8px 25px rgba(104, 130, 158, 0.1);
+    position: relative;
+}
+
+.tarjeta-regresiva::before {
+    content: "✨";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: var(--azul-acero);
+}
+
+.titulo-regresiva {
+    font-family: var(--fuente-gala);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--azul-acero);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cuenta-regresiva {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.bloque-tiempo {
+    background: var(--azul-pastel);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(104, 130, 158, 0.15);
+}
+
+.bloque-tiempo .numero {
+    font-family: var(--fuente-gala);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--azul-oscuro-legible);
+}
+
+.bloque-tiempo .etiqueta {
+    font-size: 0.75rem;
+    color: var(--azul-acero);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- MARCO DE FOTO --- */
+.foto-marco {
+    padding: 18px;
+    border-radius: 25px;
+    border: 4px solid var(--azul-pastel);
+    box-shadow: 0 10px 25px rgba(104, 130, 158, 0.15);
+    background: radial-gradient(circle, #ffffff 60%, var(--azul-pastel) 61%);
+}
+
+.foto-marco img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid var(--blanco-puro);
+}
+
+.pie-foto {
+    font-family: var(--fuente-gala);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: var(--azul-acero);
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 480px) {
+    .nombre-quinceanera { font-size: 3.3rem; }
+    body { font-size: 14px; }
+    .portada { background-image: radial-gradient(circle, #ffffff 64%, var(--azul-pastel) 65%); }
+}
+
+@media (min-width: 400px) {
+    .grid-protocolo {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .columna-protocolo { flex: 1; }
+    .linea-separadora-protocolo {
+        width: 1px;
+        height: 70px;
+        margin: 0 10px;
+    }
+}

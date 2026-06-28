@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatzi Alitzel - Mis XV Años</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="fondo-glitter">
+
+    <div class="reproductor-contenedor">
+        <span class="texto-musica" id="estadoMusica">Acompañar con Música</span>
+        <button class="btn-musica" id="btnControl" onclick="toggleMusica()">▶</button>
+    </div>
+    <audio id="audioFondo" loop src="audioFondo.mp3"></audio>
+
+    <!-- PORTADA CORREGIDA BASADA EN IMAGE_ECF2B7.PNG -->
+    <header class="portada">
+        <div class="linea-decorativa superior"></div>
+        
+        <p class="subtitulo-portada">MIS</p>
+        <h2 class="titulo-xv">XV AÑOS</h2>
+        
+        <!-- Divisor elegante con rulo o floritura -->
+        <div class="divisor-elegante">
+            <span class="rulo"></span>
+            <span class="rulo"></span>
+            <span class="rulo"></span>
+        
+        <h1 class="nombre-quinceanera">Jatzi Alitzel</h1>
+        
+        <p class="fecha-portada">24 . 07 . 2026</p>
+        <div class="linea-decorativa inferior"></div>
+    </header>
+
+    <!-- SECCIÓN CUENTA REGRESIVA -->
+    <section class="seccion-regresiva">
+        <div class="tarjeta-regresiva">
+            <h3 class="titulo-regresiva">Faltan muy pocos días</h3>
+            <div class="cuenta-regresiva" id="contador">
+                <div class="bloque-tiempo">
+                    <span class="numero" id="dias">00</span>
+                    <span class="etiqueta">Días</span>
+                </div>
+                <div class="bloque-tiempo">
+                    <span class="numero" id="horas">00</span>
+                    <span class="etiqueta">Horas</span>
+                </div>
+                <div class="bloque-tiempo">
+                    <span class="numero" id="minutos">00</span>
+                    <span class="etiqueta">Min.</span>
+                </div>
+                <div class="bloque-tiempo">
+                    <span class="numero" id="segundos">00</span>
+                    <span class="etiqueta">Seg.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="poema-seccion">
+        <p class="texto-poema">
+            "Hay personas y momentos que nunca voy a olvidar, <br>
+            y momentos como este siempre voy a recordar."
+        </p>
+    </section>
+
+    <!-- SECCIÓN PROTOCOLO (PADRES Y PADRINOS) -->
+    <section class="seccion-protocolo">
+        <div class="tarjeta-gala">
+            <p class="introduccion-protocolo">En compañía de mis padres y padrinos, tenemos el honor de invitarle.</p>
+            <div class="grid-protocolo">
+                <div class="columna-protocolo">
+                    <h3 class="azul-rey-texto">Mis Padres</h3>
+                    <p>Jesus Arturo López Jimenez</p>
+                    <p>Mitzi Meyra Segundo Aguilar</p>
+                </div>
+                <div class="linea-separadora-protocolo"></div>
+                <div class="columna-protocolo">
+                    <h3 class="azul-rey-texto">Mis Padrinos</h3>
+                    <p>Jorge de la luz López</p>
+                    <p>Magdalena chacon y jimenez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-itinerario">
+        <h2 class="titulo-seccion oro-brillante">Itinerario del Evento</h2>
+        
+        <div class="tarjeta-evento">
+            <div class="hora-evento">16:00 hrs</div>
+            <div class="detalles-evento">
+                <h3>Ceremonia Religiosa</h3>
+                <p class="lugar">Parroquia de San Juan Pablo II</p>
+                <p class="direccion">Calle Isabel La Católica No. 300, Col. Linda Vista. Misantla, Ver.</p>
+                <a href="https://www.google.com/maps/dir//Parroquia+de+San+Juan+Pablo+II,+93829,+Isabel+La+Cat%C3%B3lica+300,+Linda+Vista,+Misantla,+Ver./@19.9315348,-96.8534756,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85db116cf40e24d3:0xb04bf0dffce61deb!2m2!1d-96.8541475!2d19.9443281?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-gps">
+                    📍 Abrir GPS / Cómo Llegar
+                </a>
+            </div>
+        </div>
+
+        <div class="tarjeta-evento">
+            <div class="hora-evento">18:00 hrs</div>
+            <div class="detalles-evento">
+                <h3>Recepción & Albercada</h3>
+                <p class="lugar">Salón de Eventos "Agua Santa Clara"</p>
+                <p class="direccion">Calle Feliciano López Santiago No. 337, (Los Carriles), Col. Marco A. Muñoz. Misantla, Ver.</p>
+                <a href="https://www.google.com/maps?sca_esv=33124d0c9b4b7c6a&sxsrf=ANbL-n4nY0huQ47qxtu2GNe5pywb_39jbg:1780629108038&kgmid=/g/11dfljlpyt&shem=dlvsc,rimspwouoe&shndl=30&kgs=55407362688fffbe&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&geocode=Kes5K_1rEduFMf3BDRZT31dj&daddr=93821,+Feliciano+L%C3%B3pez+Santiago+339,+U.H.+Maestros+Veracruzanos,+Misantla,+Ver." target="_blank" class="btn-gps">
+                    📍 Abrir GPS / Cómo Llegar
+                </a>
+                <div class="nota-albercada">
+                    <p><strong>Nota especial:</strong> Disfrutaremos de una gran albercada familiar. Agradecemos no olvidar su traje de baño para compartir este momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-protocolo">
+        <div class="tarjeta-gala dress-code">
+            <div class="columna">
+                <h3 class="azul-rey-texto">Código de Vestimenta</h3>
+                <p><strong>Formal / Coctel</strong></p>
+                <p class="nota-vestimenta">
+                    Sugerimos asistir con vestimenta formal para la recepción y recordar llevar un cambio cómodo junto a su traje de baño para la albercada.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-museo">
+        <h2 class="titulo-seccion oro-brillante">Recuerdos</h2>
+        <div class="museo-grid">
+            <div class="cuadro-museo" onclick="this.classList.toggle('girada')">
+                <div class="foto-marco">
+                    <img src="WhatsApp Image 2026-06-27 at 6.39.22 PM.jpeg" alt="Jatzi Alitzel 1">
+                    <div class="pie-foto">Mis XV Años ✨</div>
+                </div>
+            </div>
+        </div> <!-- Cierre correcto del grid de recuerdos -->
+    </section>
+
+    <section class="seccion-confirmacion">
+        <h2 class="titulo-confirmar">Confirmación de Asistencia</h2>
+        <p class="texto-confirmar">Tu presencia será nuestro mejor regalo. Por favor, confírmanos tu asistencia antes del 20 de Junio.</p>
+       <a
+  href="https://wa.me/522291597226?text=Hola%21%20Quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Jatzi%20Alitzel.%20Mi%20nombre%20es%20%5BTu%20Nombre%5D"
+  target="_blank"
+  class="btn-confirmar">
+  Confirmar asistencia
+</a>
+        <p class="nota-instruccion"> Al hacer clic en el botón, se abrirá WhatsApp. Por favor, escribe tu nombre y los nombres de las personas que te acompañan. Luego, indica el total de personas que asistirán. De esta manera, podremos llevar un registro preciso de quienes nos acompañarán. ¡Muchas gracias!</p>
+    </section>
+
+    <script>
+        // --- SCRIPT DE LA CUENTA REGRESIVA ---
+        const fechaEvento = new Date('July 24, 2026 16:00:00').getTime();
+
+        const intervaloContador = setInterval(function() {
+            const ahora = new Date().getTime();
+            const distancia = fechaEvento - ahora;
+
+            const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+            document.getElementById('dias').textContent = dias < 10 ? '0' + dias : dias;
+            document.getElementById('horas').textContent = horas < 10 ? '0' + horas : horas;
+            document.getElementById('minutos').textContent = minutos < 10 ? '0' + minutos : minutos;
+            document.getElementById('segundos').textContent = segundos < 10 ? '0' + segundos : segundos;
+
+            if (distancia < 0) {
+                clearInterval(intervaloContador);
+                document.getElementById('contador').innerHTML = "<div class='numero' style='font-size:1.5rem; font-family:var(--fuente-gala); width:100%; text-align:center; color:var(--azul-acero);'>¡Llegó el Gran Día!</div>";
+            }
+        }, 1000);
+    </script>
+
+    <!-- AUDIO en el body -->
+    <audio id="audioFondo" autoplay loop muted src="audioFondo.mp3"></audio>
+
+    <script>
+        const audioFondo = document.getElementById('audioFondo');
+        const btnControl = document.getElementById('btnControl');
+        const estadoMusica = document.getElementById('estadoMusica');
+
+        function activarAudioAutomatico() {
+            if (audioFondo.paused) {
+                audioFondo.muted = false; 
+                audioFondo.play().then(() => {
+                    btnControl.textContent = "⏸️";
+                    estadoMusica.textContent = "Música Activa";
+                }).catch(err => console.log("Interacción requerida para reproducir audio..."));
+            }
+        }
+
+        document.addEventListener('click', activarAudioAutomatico, { once: true });
+        document.addEventListener('scroll', activarAudioAutomatico, { once: true });
+
+        function toggleMusica() {
+            if (audioFondo.paused) {
+                audioFondo.muted = false; 
+                audioFondo.play();
+                btnControl.textContent = "⏸️";
+                estadoMusica.textContent = "Música Activa";
+            } else {
+                audioFondo.pause();
+                btnControl.textContent = "▶";
+                estadoMusica.textContent = "Música Pausada";
+            }
+        }
+    </script>
+</body>     
+</html>
